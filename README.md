@@ -1,3 +1,6 @@
+# THE FOLLOWING READ ME IS THE ORIGINAL ONE. FOR REPLICATION OF THE PIPELINE PLEASE GO TO 
+# '/replications' FOLDER AND FOLLOW THE README THERE.
+
 # Debate, Reflect, and Distill: Multi-Agent Feedback with Tree-Structured Preference Optimization for Efficient Language Model Enhancement
 
 # Introduction
