@@ -1,0 +1,44 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "messages": [
+      {
+        "content": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "role": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      }
+    ],
+    "question": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "answer": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "response": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "total_tokens": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "prompt_tokens": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "completion_tokens": {
+      "dtype": "int64",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}
