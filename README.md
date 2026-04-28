@@ -1,5 +1,6 @@
 # THE FOLLOWING READ ME IS THE ORIGINAL ONE. FOR REPLICATION OF THE PIPELINE PLEASE GO TO 
-# '/replications' FOLDER AND FOLLOW THE README THERE.
+# 'replication_guide.ipynb' and follow the notebook.
+# This will require you to launch jupyter in Ubuntu, which if is not installed will be required. 
 
 # Debate, Reflect, and Distill: Multi-Agent Feedback with Tree-Structured Preference Optimization for Efficient Language Model Enhancement
 

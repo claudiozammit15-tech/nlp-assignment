@@ -23,9 +23,12 @@ def parse_answer(response, dataset):
 
     return ret
 
-def prepare_test_data(dataset):
+def prepare_test_data(dataset, num_questions=None):
     test_samples = json.load(open(f"./data/test_data/{dataset}_test.json", "r"))
     choice_p=choice_prompts[dataset]
+
+    if num_questions is not None:
+        test_samples = test_samples[:num_questions]
 
     test_batch = []
     for i in test_samples: 
@@ -40,6 +43,7 @@ def main():
     parser = argparse.ArgumentParser()
     # dataset: ['SQA', 'ECQA', 'ARC', 'GSM8K', 'MATH']
     parser.add_argument('--dataset', default='MATH', type=str)
+    parser.add_argument('--num_questions', default=None, type=int, help='Limit the number of questions to test (None = all)')
     parser.add_argument('--num_proc', default=10, type=int)
     parser.add_argument('--model_name', default='Mistral-7B-Instruct-v0.2', type=str)
     parser.add_argument('--temperature', default=1.0, type=float)
@@ -67,7 +71,7 @@ def main():
         generate_conf["temperature"]=args.temperature
     print(generate_conf)
 
-    test_samples, test_batch = prepare_test_data(args.dataset)
+    test_samples, test_batch = prepare_test_data(args.dataset, args.num_questions)
     print(len(test_samples), len(test_batch))
     test_dataset=Dataset.from_list(test_batch)
 

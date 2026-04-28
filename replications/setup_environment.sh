@@ -47,8 +47,11 @@ pip install --quiet \
     peft==0.15.0 \
     transformers==4.50.0 \
     trl==0.16.0 \
+    google-generativeai==0.8.3 \
     sentencepiece \
+    "tokenizers>=0.21,<0.22" \
     protobuf \
+    litellm \
     huggingface_hub
 
 echo "Installing llama-cpp-python (CPU server)..."
